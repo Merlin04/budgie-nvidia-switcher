@@ -8,7 +8,7 @@ def getStatusOfGpu():
     # only works with python 3.5 or higher
     commandOutput = subprocess.run(['cat', '/sys/bus/pci/devices/0000:01:00.0/power/control'], stdout=subprocess.PIPE) # get the object
     result = commandOutput.stdout.decode('utf8') # stdout will be a bytes object, so decode it to a string
-    if (result == "on"):
+    if (result == "on\n"):
         return("Currently using Nvidia")
     else:
         return("Currently using Intel")    
