@@ -1,0 +1,9 @@
+[Plugin]
+Loader=python3
+Module=budgie_nvidia_switcher
+Name=Budgie Nvidia Switcher
+Description=Budgie Nvidia Switcher
+Authors=merlin04
+Copyright=Copyright © 2018 merlin04, MIT license
+Website=https://github.com/merlin04
+Icon=video-display-symbolic
