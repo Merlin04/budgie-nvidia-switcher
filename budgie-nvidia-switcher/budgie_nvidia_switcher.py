@@ -43,7 +43,7 @@ class SomeAppApplet(Budgie.Applet):
 
     def run_command(self, menuitem):
         print(menuitem)
-        subprocess.Popen(["pkexec", "bash", "-c", "prime-select intel && reboot"])
+        subprocess.Popen(["pkexec", "bash", "-c", "prime-select intel && gnome-session-quit --no-prompt"])
         dialog = Gtk.MessageDialog(type=Gtk.MessageType.INFO, buttons=Gtk.ButtonsType.OK, text="Please wait...")
         dialog.format_secondary_text("This might take a while. Don't turn off your computer. ")
         dialog.run()
@@ -52,7 +52,7 @@ class SomeAppApplet(Budgie.Applet):
 
     def run_command_2(self, menuitem):
         print(menuitem)
-        subprocess.Popen(["pkexec", "bash", "-c", "prime-select nvidia && reboot"])
+        subprocess.Popen(["pkexec", "bash", "-c", "prime-select nvidia && gnome-session-quit --no-prompt"])
         dialog = Gtk.MessageDialog(type=Gtk.MessageType.INFO, buttons=Gtk.ButtonsType.OK, text="Please wait...")
         dialog.format_secondary_text("This might take a while. Don't turn off your computer. ")
         dialog.run()
@@ -61,7 +61,7 @@ class SomeAppApplet(Budgie.Applet):
 
     def run_command_3(self, menuitem):
         print(menuitem)
-        # subprocess.Popen(["pkexec", "bash", "-c", "prime-select nvidia && reboot"])
+        # subprocess.Popen(["pkexec", "bash", "-c", "prime-select nvidia && gnome-session-quit --no-prompt"])
         dialog = Gtk.MessageDialog(type=Gtk.MessageType.INFO, buttons=Gtk.ButtonsType.OK, text="Please wait...")
         dialog.format_secondary_text("This might take a while. Don't turn off your computer. ")
         dialog.run()
