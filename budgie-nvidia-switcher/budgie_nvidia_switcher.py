@@ -71,9 +71,9 @@ class SomeAppApplet(Budgie.Applet):
 
     def create_menu(self):
         sep = Gtk.SeparatorMenuItem(getStatusOfGpu())
-        item1 = Gtk.MenuItem('Switch to Intel Graphics and reboot')
+        item1 = Gtk.MenuItem('Switch to Intel Graphics and logout')
         item1.connect("activate", self.run_command)
-        item2 = Gtk.MenuItem('Switch to Nvidia Graphics and reboot')
+        item2 = Gtk.MenuItem('Switch to Nvidia Graphics and logout')
         item2.connect("activate", self.run_command_2)
        	# item3 = Gtk.MenuItem('Test')
         # item3.connect("activate", self.run_command_3)
